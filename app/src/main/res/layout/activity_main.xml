@@ -36,13 +36,11 @@
                 android:id="@+id/left"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:icon="@drawable/menu_icon"
                 android:text=" 1 " />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/center"
                 android:layout_width="wrap_content"
-                android:icon="@drawable/search_icon"
                 android:layout_height="match_parent"
                 android:text=" 2 " />
 
@@ -50,7 +48,6 @@
             <android.support.design.widget.TabItem
                 android:id="@+id/right"
                 android:layout_width="wrap_content"
-                android:icon="@drawable/logo_150"
                 android:layout_height="match_parent"
                 android:text=" 3 " />
 

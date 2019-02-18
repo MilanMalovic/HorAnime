@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="none"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/MyTabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabIndicatorColor="@color/colorSwitchOnLight"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="@color/colorGreenLight"
+            app:tabMode="fixed"
+            app:tabGravity="fill">
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:icon="@drawable/menu_icon"
+                android:text=" 1 " />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:icon="@drawable/search_icon"
+                android:layout_height="match_parent"
+                android:text=" 2 " />
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:icon="@drawable/logo_150"
+                android:layout_height="match_parent"
+                android:text=" 3 " />
+
+
+
+        </android.support.design.widget.TabLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include
+
+        layout="@layout/view_pager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></include>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
